@@ -3,22 +3,51 @@ $superDark: #1A1A1A;
 $superBlue:#61B6FA;
 $primary: $superRed;
 $secondary: $superBlue;
+$headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 @import '../node_modules/bootstrap-scss/bootstrap.scss';
 
-#header-row, #footer-row {
+#header-row {
     background: $superDark;
+    @include media-breakpoint-down(sm){
+        text-align: center;
+    }
 
     h1 {
-        color: $primary;
+        color: $primary;    
     }
 
     h3 {
-        color: $secondary;  
+        color: $secondary;
+        @include media-breakpoint-up(sm){
+            margin-left: 1rem;
+        }  
     }
 
     img.ego {
         border-radius: 100%;
+        @include media-breakpoint-down(sm){
+
+                max-width: 75%;
+                
+              }
+        }
         
     }    
-}
+
+
+.display-1 {
+    font-size: $display1-size;
+    font-weight: $display1-weight;
+    line-height: $display-line-height;
+
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        font-size: $display2-size;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: $display4-size;
+    }
+
+  }

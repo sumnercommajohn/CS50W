@@ -358,7 +358,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Roboto Slab", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
@@ -8603,17 +8603,48 @@ h3 {
     border-color: #dee2e6;
   }
 }
-#header-row, #footer-row {
+#header-row {
   background: #1A1A1A;
 }
-#header-row h1, #footer-row h1 {
+@media (max-width: 767.98px) {
+  #header-row {
+    text-align: center;
+  }
+}
+#header-row h1 {
   color: #AF2F19;
 }
-#header-row h3, #footer-row h3 {
+#header-row h3 {
   color: #61B6FA;
 }
-#header-row img.ego, #footer-row img.ego {
+@media (min-width: 576px) {
+  #header-row h3 {
+    margin-left: 1rem;
+  }
+}
+#header-row img.ego {
   border-radius: 100%;
+}
+@media (max-width: 767.98px) {
+  #header-row img.ego {
+    max-width: 75%;
+  }
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (max-width: 991.98px) {
+  .display-1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .display-1 {
+    font-size: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
