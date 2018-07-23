@@ -1,0 +1,25 @@
+{
+  "name": "cs50w",
+  "version": "1.0.0",
+  "description": "no idea what I'm doing",
+  "main": "index.js",
+  "scripts": {
+    "test": "uh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumnercommajohn/CS50W.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "John Sumner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumnercommajohn/CS50W/issues"
+  },
+  "homepage": "https://github.com/sumnercommajohn/CS50W#readme",
+  "dependencies": {
+    "bootstrap-scss": "^4.1.2"
+  }
+}

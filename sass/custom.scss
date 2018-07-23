@@ -1,0 +1,24 @@
+$superRed: #AF2F19;
+$superDark: #1A1A1A;
+$superBlue:#61B6FA;
+$primary: $superRed;
+$secondary: $superBlue;
+
+@import '../node_modules/bootstrap-scss/bootstrap.scss';
+
+#header-row, #footer-row {
+    background: $superDark;
+
+    h1 {
+        color: $primary;
+    }
+
+    h3 {
+        color: $secondary;  
+    }
+
+    img.ego {
+        border-radius: 100%;
+        
+    }    
+}
