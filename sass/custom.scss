@@ -9,7 +9,7 @@ $headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sa
 
 #header-row {
     background: $superDark;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(xs){
         text-align: center;
     }
 
@@ -26,7 +26,7 @@ $headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sa
 
     img.ego {
         border-radius: 100%;
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(xs){
 
                 max-width: 75%;
                 

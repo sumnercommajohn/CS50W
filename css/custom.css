@@ -8606,7 +8606,7 @@ h3 {
 #header-row {
   background: #1A1A1A;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   #header-row {
     text-align: center;
   }
@@ -8625,7 +8625,7 @@ h3 {
 #header-row img.ego {
   border-radius: 100%;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   #header-row img.ego {
     max-width: 75%;
   }
