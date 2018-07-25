@@ -1,11 +1,28 @@
 $superRed: #AF2F19;
 $superDark: #1A1A1A;
 $superBlue:#61B6FA;
+$superCream: #ffffec;
 $primary: $superRed;
 $secondary: $superBlue;
+$dark: $superDark;
+$light: $superCream;
+$body-bg: $superCream;
+
 $headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
 
 @import '../node_modules/bootstrap-scss/bootstrap.scss';
+
+@mixin categoryTag ($bgcolor, $color) {
+    color: $color;
+    background-color: $bgcolor;
+    font-weight: bold;
+    padding: ($spacer * .25);
+    display: inline-block;
+   
+}
 
 #header-row {
     background: $superDark;
@@ -13,31 +30,68 @@ $headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sa
         text-align: center;
     }
 
-    h1 {
-        color: $primary;    
-    }
-
-    h3 {
-        color: $secondary;
-        @include media-breakpoint-up(sm){
-            margin-left: 1rem;
-        }  
-    }
-
-    img.ego {
-        border-radius: 100%;
-        @include media-breakpoint-down(xs){
-
-                max-width: 75%;
-                
-              }
+        h1 {
+            color: $primary;    
         }
+
+        h3 {
+            color: $secondary;
+            @include media-breakpoint-up(sm){
+                margin-left: 1rem;
+            }  
+        }
+
+        img.ego {
+            border-radius: 100%;
+            @include media-breakpoint-down(xs){
+
+                    max-width: 75%;
+                    
+                }
+            }
         
-    }    
+    }
+    
+
+.course {
+    @include categoryTag($dark, $secondary);
+}
+
+.tool {
+    @include categoryTag($dark, $primary);
+}
+
+.tech {
+    @include categoryTag($dark, $yellow);
+    
+}
+        
+.jumbotron {
+    
+    color: $dark;
+    border: {
+
+        left: 15px solid $dark;
+
+    }
+
+    div.hr {
+
+        border-top: 1px solid $superDark;
+        margin: ($spacer * 3);
+        
+        }
+
+    
+}
+
+nav.navbar {
+    font-family: $headings-font-family;
+}
 
 
 .display-1 {
-    font-size: $display1-size;
+    font-size: $display2-size;
     font-weight: $display1-weight;
     line-height: $display-line-height;
 
