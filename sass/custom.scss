@@ -5,12 +5,12 @@ $superCream: #ffffec;
 $primary: $superRed;
 $secondary: $superBlue;
 $dark: $superDark;
-$light: $superCream;
-$body-bg: $superCream;
+
+
 
 $headings-font-family:        "Roboto Slab", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-
+$headings-font-weight: 700;
 
 
 @import '../node_modules/bootstrap-scss/bootstrap.scss';
@@ -24,7 +24,11 @@ $font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, Ro
    
 }
 
-#header-row {
+body a {
+    font-weight: bold;
+}
+
+#header-row, #footer-row {
     background: $superDark;
     @include media-breakpoint-down(xs){
         text-align: center;
@@ -53,20 +57,12 @@ $font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, Ro
     }
     
 
-.course {
+.course, .tech, .tool {
     @include categoryTag($dark, $secondary);
 }
 
-.tool {
-    @include categoryTag($dark, $primary);
-}
-
-.tech {
-    @include categoryTag($dark, $yellow);
-    
-}
         
-.jumbotron {
+#hero-row .jumbotron {
     
     color: $dark;
     border: {
@@ -87,6 +83,10 @@ $font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, Ro
 
 nav.navbar {
     font-family: $headings-font-family;
+}
+
+#above-footer-row {
+    border-top: 5px dashed $dark;
 }
 
 

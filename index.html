@@ -33,10 +33,22 @@
                     </div>
                     <div class="col-sm-1 d-flex flex-row flex-sm-column justify-content-around text-primary">
                         
-                                <button class="btn btn-outline-secondary mx-auto rounded-circle mr-3"><i class="fab fa-github"></i></button>
-                                <button class="btn btn-outline-secondary mx-auto rounded-circle mr-3"><i class="fab fa-instagram"></i></button>
-                                <button class="btn btn-outline-secondary mx-auto rounded-circle mr-3"><i class="fab fa-free-code-camp"></i></button>
-                                <button class="btn btn-outline-secondary mx-auto rounded-circle mr-3"><i class="fab fa-codepen"></i></button>
+                                <button class="btn btn-dark mx-auto rounded-circle text-secondary mr-3"><span class="fa-stack fa-md">
+                                        <i class="far fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x"></i>
+                                      </span></button>
+                                <button class="btn btn-dark mx-auto rounded-circle text-secondary mr-3"><span class="fa-stack fa-md">
+                                    <i class="far fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                    </span></button>
+                                <button class="btn btn-dark mx-auto rounded-circle text-secondary mr-3"><span class="fa-stack fa-md">
+                                    <i class="far fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-free-code-camp fa-stack-1x"></i>
+                                    </span></button>
+                                <button class="btn btn-dark mx-auto rounded-circle text-secondary mr-3"><span class="fa-stack fa-md">
+                                    <i class="far fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-codepen fa-stack-1x"></i>
+                                    </span></button>
                                                 
                     </div>
                 </div>
@@ -45,7 +57,7 @@
                     <nav class="navbar bg-primary navbar-expand-md lead" id="main-nav-row"> <!-- --------------------Nav-Row-------------------------- -->
                         
                         <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon text-light"><i class="fas fa-bars"></i></span>
+                            <span class="navbar-toggler-icon text-light"><i class="fas fa-fw fa-bars"></i></span>
                           </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
@@ -86,7 +98,7 @@
                                 <p class="lead">Here it is, my first project of Harvard's CS50W course. So, how did I do?</p>
                                 <div class="hr m-3"></div>
                                 
-                                <a href="#" class="lead font-weight-bold">See Project Requirements >>></a> 
+                                <a href="#" class="lead font-weight-bold">See Project Requirements>>></a> 
                             </div>
                         </div>
                     
@@ -107,21 +119,21 @@
                             <li class="media">
                                 <img class="p-3 w-25" src="images/thumb.png" alt="news thumbnail">
                                 <div class="media-body p-3">
-                                    <h5>Git</h5>
+                                    <h4>Git</h4>
                                     Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.
                                 </div>
                             </li>
                             <li class="media">
                                 <img class="p-3 w-25" src="images/thumb2.png" alt="news thumbnail">
                                 <div class="media-body p-3">
-                                    <h5>Bootstrap</h5>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi corporis debitis earum iste reiciendis aspernatur asperiores.
+                                    <h4>Bootstrap</h4>
+                                    Bootstrap is a free and open-source front-end framework (library) for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.
                                 </div>
                             </li>
                             <li class="media">
                                 <img class="p-3 w-25" src="images/thumb3.png" alt="news thumbnail">
                                 <div class="media-body p-3">
-                                    <h5>Sass</h5>
+                                    <h4>Sass</h4>
                                     Sass is one of a class of tools called CSS preprocessors. Other popular examples include Less and Stylus. Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, nested rules, mixins, and more.
                                 </div>
                             </li>
@@ -132,29 +144,38 @@
                 <div class="row p-4" id="featured-row"> <!-- --------------------Featured-Row-------------------------- -->
                     <div class="col-12"><h2 class="text-center p-3 tech">Core Tech</h2></div>
                     <div class="col-sm-4">
-                        <h1 class="display-1 text-center">
-                            <i class="fab fa-html5 fa-large text-primary p-4" aria-hidden="true"></i>
-                        </h1>
-                        <h5 class="text-center">HTML5</h5>
+                        <h3 class="display-1 featured-tech text-center">
+                                <span class="fa-stack fa-md">
+                                        <i class="far fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-html5 fa-stack-1x"></i>
+                                      </span>
+                        </h3>
+                        <h4 class="text-center">HTML5</h4>
                         <p>HTML is the fundamental technology used to define the structure of a webpage. HTML is used to specify whether your web content should be recognized as a paragraph, list, heading, link, image, multimedia player, form, or one of many other available elements or even a new element that you define.</p>
                     </div>
                     <div class="col-sm-4">
-                        <h1 class="display-1  text-center">
-                            <i class="fab fa-css3 fa-large text-primary p-4" aria-hidden="true"></i>
-                        </h1>
-                        <h5 class=" text-center">CSS3</h5>
+                        <h3 class="display-1 featured-tech text-center">
+                                <span class="fa-stack fa-md">
+                                        <i class="far fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-css3 fa-stack-1x"></i>
+                                      </span>
+                        </h3>
+                        <h4 class="text-center">CSS3</h4>
                         <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
                     </div>
                     <div class="col-sm-4">
-                        <h1 class="display-1  text-center">
-                            <i class="fab fa-js fa-large text-primary p-4" aria-hidden="true"></i>
-                        </h1>
-                        <h5 class=" text-center">JavaScript</h5>
+                        <h3 class="featured-tech display-1 text-center">
+                                <span class="fa-stack fa-md">
+                                        <i class="far fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-js fa-stack-1x"></i>
+                                      </span>
+                        </h3>
+                        <h4 class=" text-center">JavaScript</h4>
                         <p>JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it.</p>
                     </div>
                 </div>
-                <div class="row bg-primary px-4 py-5" id="above-footer-row"> <!-- --------------------Above- Footer-Row-------------------------- -->
-                    <div class="col-sm-6 text-white lead">
+                <div class="row bg-secondary px-4 py-5" id="above-footer-row"> <!-- --------------------Above- Footer-Row-------------------------- -->
+                    <div class="col-sm-6 text-dark lead">
                         <h3 class="display1">Up Next</h3>
                         Among the other topics to be covered in this course:
                     </div>
