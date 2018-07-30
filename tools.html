@@ -61,105 +61,67 @@
             </div>
         </div>
     </div>
-
-    <nav class="navbar bg-primary navbar-expand-md lead" id="main-nav-row">
-        <!-- --------------------Nav-Row-------------------------- -->
-
-        <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-light">
-                <i class="fas fa-fw fa-bars"></i>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle text-light" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projects</a>
-                    <div class="dropdown-menu" aria-labelledby="projectsDropdown">
-                            <a class="dropdown-item" href="project0.html">Project0</a>
-                            </div>
-                </li>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" id="examplesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Examples</a>
-                        <div class="dropdown-menu" aria-labelledby="examplesDropdown">
-                            <a class="dropdown-item" href="flex.html">Flexbox Example</a>
-                            <a class="dropdown-item" href="grid.html">CSS Grid Example</a>
-                            <a class="dropdown-item" href="form.html">Bootstrap Example</a>
-                            <a class="dropdown-item" href="form.html">HTML5 Form Example</a>
-                        </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Languages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Resources</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link text-light" href="#">About CS50W</a>
-                </li>    
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="input-group">
-                    <input type="text" name="" id="" class="form-control text-primary border-white border-right-0 rounded-left" placeholder="Out of Order"
-                        aria-describedby="helpId">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary border-left-0 rounded-right border-light" type="submit">
-                            <i class="fa fa-search text-light fa-sea"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
+    <!-- --------------------Nav-Row-------------------------- -->
+    <nav class="navbar navbar-expand lead bg-primary">
+        <div class="nav navbar-nav">
+            <a class="nav-item text-light nav-link active" href="index.html"> <i class="fas fa-arrow-left"></i> Home <span class="sr-only">(current)</span></a>
         </div>
     </nav>
-
+    <!-- --------------------MAIN-------------------------- -->
     <div class="container-fluid">
-        <!-- --------------------MAIN-------------------------- -->
         <div class="row">
-            <div class="col-md-2 bg-dark">
-                    <h2 class="course">Dev Tools</h2> 
-            </div>
-            <div class="col-md-10">
-                <div class="card-deck p-4">
-
-                    <div class="card toolCard border-dark p-0">
-                        <div class="card-wrap">
-                            <h3 class="tool mt-0 ml-0">Git</h3>
-                            <h1 class="text-center"><i class="fab fa-git fa-3x"></i></h1>
-                            <div class="card-body">
-                                <p class="card-text">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.</p>
-                                <p class="lead"><a href="">Get Git</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card toolCard border-dark p-0">
-                            <div class="card-wrap">
-                                <h3 class="tool mt-0 ml-0">Bootstrap</h3>
-                                <p class="text-center" id="bootlegstrap">B</p>
-                                <div class="card-body">
-                                    <p class="card-text">Bootstrap is a free and open-source front-end framework (library) for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.</p>
-                                    <p class="lead"><a href="">Get Bootstrap</a></p>
-                                </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card toolCard border-dark p-0">
-                            <div class="card-wrap">
-                                <h3 class="tool mt-0 ml-0">Sass</h3>
-                                <h1 class="text-center"><i class="fab fa-sass fa-3x"></i></h1>
-                                <div class="card-body">
-                                    <p class="card-text">Sass is one of a class of tools called CSS preprocessors. Other popular examples include Less and Stylus. Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, nested rules, mixins, and more.</p>
-                                    <p class="lead"><a href="">Get Sass</a></p>
-                                </div>
-                            </div>
-                    </div>
-
-                </div>
+            <div class="col bg-dark">
+                <h2 class="course">Dev Tools</h2> 
+                <p class="text-secondary">Programming is intimidating from the perspective of the beginner. I always imagined that coding meant meticulously typing out every single character one by one, line by line, writing every component from scratch. It didn't take long to figure out that writing a program from that approach would be like raising chickens and harvesting wheat in order to make a sandwich. Development is all about tools: choosing the right tools, knowing how they work, and learning how to use them properly. Do not run from tools; they may be intimidating from the outside but most of these can be learned in a weekend. This is a running list of the tools I am learning to use.</p>
             </div>
         </div>
+            
+            <div class="row">
+                <div class="col-12">
+    
+                    <div class="card-deck p-4">
+    
+                        <div class="card toolCard border-dark p-0">
+                            <div class="card-wrap">
+                                <h3 class="tool mt-0 ml-0">Git</h3>
+                                <h1 class="text-center"><i class="fab fa-git fa-3x"></i></h1>
+                                <div class="card-body">
+                                    <p class="card-text">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.</p>
+                                    <p class="lead"><a href="https://git-scm.com/downloads">Get Git</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card toolCard border-dark p-0">
+                                <div class="card-wrap">
+                                    <h3 class="tool mt-0 ml-0">Bootstrap</h3>
+                                    <p class="text-center" id="bootlegstrap">B</p>
+                                    <div class="card-body">
+                                        <p class="card-text">Bootstrap is a free and open-source front-end framework (library) for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.</p>
+                                        <p class="lead"><a href="https://getbootstrap.com/">Get Bootstrap</a></p>
+                                    </div>
+                                </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-12">
+                        <div class="card-deck p-4">                       
+                            <div class="card toolCard border-dark p-0">
+                                    <div class="card-wrap">
+                                        <h3 class="tool mt-0 ml-0">Sass</h3>
+                                        <h1 class="text-center"><i class="fab fa-sass fa-3x"></i></h1>
+                                        <div class="card-body">
+                                            <p class="card-text">Sass is one of a class of tools called CSS preprocessors. Other popular examples include Less and Stylus. Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, nested rules, mixins, and more.</p>
+                                            <p class="lead"><a href="https://sass-lang.com/install">Get Sass</a></p>
+                                        </div>
+                                    </div>
+                            </div>
+        
+                        </div>
+                    </div>
+            </div>
+
         <!-- --------------------Above- Footer-Row-------------------------- -->
         <div class="row bg-secondary px-4 py-5" id="above-footer-row">
             <div class="col-sm-6 text-dark lead">
