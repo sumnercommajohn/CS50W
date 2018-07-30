@@ -8698,4 +8698,11 @@ nav.navbar {
   padding: 5px;
 }
 
+.row.bs-examples div {
+  border: 3px solid #1A1A1A;
+  background: #AF2F19;
+  color: #61B6FA;
+  height: 150px;
+}
+
 /*# sourceMappingURL=custom.css.map */

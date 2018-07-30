@@ -28,10 +28,14 @@
         <div class="row p-4" id="header-row">
             <!--------------------Header-Row-------------------------->
             <div class="col-sm-2 text-center">
-                <a href="index.html"><img src="images/egohead_noborder.png" alt="" class="img-fluid ego"></a>
+                <a href="index.html">
+                    <img src="images/egohead_noborder.png" alt="" class="img-fluid ego">
+                </a>
             </div>
             <div class="col-sm">
-                <h1 class="display-1 site-title"><a href="index.html">CS50W</a></h1>
+                <h1 class="display-1 site-title">
+                    <a href="index.html">CS50W</a>
+                </h1>
                 <h3>My Brain Hurts!</h3>
 
             </div>
@@ -66,56 +70,160 @@
         </div>
     </div>
 
-  <!-- --------------------Nav-Row-------------------------- -->
-  <nav class="navbar navbar-expand lead bg-primary">
+    <!-- --------------------Nav-Row-------------------------- -->
+    <nav class="navbar navbar-expand lead bg-primary">
         <div class="nav navbar-nav">
-            <a class="nav-item text-light nav-link active" href="index.html"> <i class="fas fa-arrow-left"></i> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item text-light nav-link active" href="index.html">
+                <i class="fas fa-arrow-left"></i> Home
+                <span class="sr-only">(current)</span>
+            </a>
         </div>
     </nav>
-<!-- --------------------Main-Row-------------------------- -->
+    <!-- --------------------Main-Row-------------------------- -->
 
     <div class="container-fluid">
-    <h1 class="course">Project0 Requirements</h1>    
-        <div class="row bg-secondary px-4 py-5" id="above-footer-row">
-            <!-- --------------------Above- Footer-Row-------------------------- -->
-            <div class="col-sm-6 text-dark lead">
-                <h3 class="display1">Up Next</h3>
-                Among the other topics to be covered in this course:
-            </div>
-            <div class="col-sm-6">
-                <div id="footerSlider" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#footerSlider" data-slide-to="0" class="active"></li>
-                        <li data-target="#footerSlider" data-slide-to="1"></li>
-                        <li data-target="#footerSlider" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active text-center">
-                            <img src="images/footer-slider1.png" height="200px" width="auto" alt="First slide">
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="images/footer-slider2.png" height="200px" width="auto" alt="Second slide">
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="images/footer-slider3.jpg" height="200px" width="auto" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+        <h1 class="course">Project0 Requirements</h1>
+
+
+        <div class="container">
+            <h2 id="objectives">Objectives</h2>
+    
+            <ul>
+                <li>Become more comfortable with HTML and CSS to design and style webpages.</li>
+                <li>Learn to use SCSS to write more complex stylesheets for your webpages.</li>
+            </ul>
+    
+            <h2 id="getting-started">Getting Started</h2>
+    
+            <h3 id="your-first-webpage">Your First Webpage</h3>
+    
+            <p>Download the distro code for this project from
+                <a href="https://cdn.cs50.net/web/2018/spring/projects/0/project0.zip">https://cdn.cs50.net/web/2018/spring/projects/0/project0.zip</a> and unzip
+                <code class="highlighter-rouge">project0.zip</code>, which should yield a directory called
+                <code class="highlighter-rouge">project0</code>.</p>
+    
+            <p>Then, in a terminal window (located in
+                <code class="highlighter-rouge">/Applications/Utilities</code> on Mac or by typing
+                <code class="highlighter-rouge">cmd</code> in the Windows task bar), move to the directory where you extracted
+                <code class="highlighter-rouge">project0</code>
+                (recall that the
+                <code class="highlighter-rouge">cd</code> command can change your current directory), and run</p>
+    
+            <div class="highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code>cd project0
+    </code></pre>
                 </div>
             </div>
+    
+            <p>to enter the project directory. Now, run</p>
+    
+            <div class="highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code>touch index.html
+    </code></pre>
+                </div>
+            </div>
+    
+            <p>to create a new
+                <code class="highlighter-rouge">index.html</code> file in your repository. Open the file with your favorite text editor: popular choices include
+                <a href="https://atom.io/">Atom</a>,
+                <a href="https://www.sublimetext.com/">Sublime Text</a>, and
+                <a href="https://code.visualstudio.com/">VS Code
+                </a>. Then, paste in the following contents:</p>
+    
+            <div class="language-html highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+        <span class="nt">&lt;head&gt;</span>
+            <span class="nt">&lt;title&gt;</span>My Webpage<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;/head&gt;</span>
+        <span class="nt">&lt;body&gt;</span>
+            Hello, world!
+        <span class="nt">&lt;/body&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+    </code></pre>
+                </div>
+            </div>
+    
+            <p>Then, save your
+                <code class="highlighter-rouge">index.html</code> file.</p>
+    
+            <h2 id="requirements">Requirements</h2>
+    
+            <p>Alright, now it’s time to make your website your own. Design a personal webpage about yourself, one of your interests,
+                or any other topic of your choice. The subject matter, look and feel, and design of the site are entirely up
+                to you, subject to the following requirements:</p>
+    
+            <ul>
+                <li>Your website must contain at least four different
+                    <code class="highlighter-rouge">.html</code> pages, and it should be possible to get from any page on your website to any other page by following
+                    one or more hyperlinks.</li>
+                <li>Your website must include at least one list (ordered or unordered), at least one table, and at least one image.</li>
+                <li>Your website must have at least one stylesheet file.</li>
+                <li>Your stylesheet(s) must use at least five different CSS properties, and at least five different types of CSS
+                    selectors. You must use the
+                    <code class="highlighter-rouge">#id</code> selector at least once, and the
+                    <code class="highlighter-rouge">.class</code> selector at least once.</li>
+                <li>Your stylesheet(s) must include at least one mobile-responsive
+                    <code class="highlighter-rouge">@media</code> query, such that something about the styling changes for smaller screens.</li>
+                <li>You must use Bootstrap 4 on your website, taking advantage of at least one Bootstrap
+                    <a href="https://getbootstrap.com/docs/3.3/components/">component</a>, and using at least two Bootstrap columns for layout purposes using Bootstrap’s
+                    <a href="https://getbootstrap.com/docs/4.0/layout/grid/">grid model</a>.</li>
+                <li>Your stylesheets must use at least one SCSS variable, at least one example of SCSS nesting, and at least one
+                    use of SCSS inheritance.</li>
+                <li>In
+                    <code class="highlighter-rouge">README.md</code>, include a short writeup describing your project, what’s contained in each file, and (optionally)
+                    any other additional information the staff should know about your project.</li>
+            </ul>
+    
+            <p>Note that not all of the above requirements are covered in Lecture 0, some will be introduced in Lecture 1.</p>
+    
+           
         </div>
-        <div class="row text-light px-4 py-3" id="footer-row">
-            <!-- --------------------Footer-Row-------------------------- -->
-            <div class="col-sm-6">COPYRIGHT &copy;2018 APPRENTICE WORKS </div>
-            <div class="col-sm-6 text-right">THIS IS JUST A SAMPLE</div>
+
+    </div>
+    <div class="row bg-secondary px-4 py-5" id="above-footer-row">
+        <!-- --------------------Above- Footer-Row-------------------------- -->
+        <div class="col-sm-6 text-dark lead">
+            <h3 class="display1">Up Next</h3>
+            Among the other topics to be covered in this course:
         </div>
+        <div class="col-sm-6">
+            <div id="footerSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#footerSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#footerSlider" data-slide-to="1"></li>
+                    <li data-target="#footerSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active text-center">
+                        <img src="images/footer-slider1.png" height="200px" width="auto" alt="First slide">
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/footer-slider2.png" height="200px" width="auto" alt="Second slide">
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/footer-slider3.jpg" height="200px" width="auto" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row text-light px-4 py-3" id="footer-row">
+        <!-- --------------------Footer-Row-------------------------- -->
+        <div class="col-sm-6">COPYRIGHT &copy;2018 APPRENTICE WORKS </div>
+        <div class="col-sm-6 text-right">THIS IS JUST A SAMPLE</div>
+    </div>
     </div>
     <!-- End Container -->
 

@@ -129,3 +129,12 @@ nav.navbar {
 
     
 }
+
+.row.bs-examples {
+    div {
+        @include cardBorder($dark);
+        background: $primary;
+        color: $secondary;
+        height: 150px;
+    }
+}
